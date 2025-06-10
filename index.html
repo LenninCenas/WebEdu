@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebEdu - Educación Básica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WebEdu</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+                <li><a href="#cursos" onclick="mostrarSeccion('cursos')">Cursos</a></li>
+                <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="seccion activa">
+            <h2>Bienvenido a WebEdu</h2>
+            <div class="carrusel">
+                <div class="slide activa">
+                    <img src="https://placehold.co/700x250?text=Aprende+Fácil" alt="Aprende Fácil">
+                    <p>Aprende de manera sencilla y efectiva.</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/700x250?text=Cursos+Actualizados" alt="Cursos Actualizados">
+                    <p>Cursos actualizados y relevantes.</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/700x250?text=Comunidad+Activa" alt="Comunidad Activa">
+                    <p>Únete a una comunidad activa de estudiantes.</p>
+                </div>
+            </div>
+            <p>Tu plataforma para aprender de manera sencilla y efectiva.</p>
+        </section>
+        <section id="cursos" class="seccion">
+            <h2>Cursos Disponibles</h2>
+            <ul>
+                <li>Matemáticas Básicas</li>
+                <li>Ciencias Naturales</li>
+                <li>Historia Universal</li>
+            </ul>
+        </section>
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 WebEdu. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
